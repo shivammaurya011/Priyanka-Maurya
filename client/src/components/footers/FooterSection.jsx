@@ -57,5 +57,4 @@ function FooterSection() {
     </Footer>
   );
 }
-
 export default FooterSection;
