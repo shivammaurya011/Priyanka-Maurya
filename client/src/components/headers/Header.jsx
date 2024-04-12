@@ -4,10 +4,9 @@ import { Link } from "react-router-dom";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 function Header() {
-  const [theme, setTheme] = useState('light'); // State to manage theme
-
+  const [theme, setTheme] = useState('light'); 
   const handleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light')); // Toggle theme
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
   }
 
   return (
