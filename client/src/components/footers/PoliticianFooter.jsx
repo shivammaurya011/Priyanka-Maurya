@@ -63,5 +63,4 @@ function PoliticianFooter() {
     </Footer>
   )
 }
-
 export default PoliticianFooter
