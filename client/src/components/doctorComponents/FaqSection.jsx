@@ -38,7 +38,7 @@ const FaqSection = () => {
     <section className="py-2 sm:py-8 bg-blue-100 lg:py-16">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-blue-800 sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight text-blue-500 sm:text-4xl lg:text-5xl">
             Explore Common Questions
           </h2>
           <p className='m-4 '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem maxime totam similique magnam facilis iste.</p>

@@ -1,34 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import heroImg from '../../assets/heroimg.png';
+import phero from '../../assets/phero.png';
 
 function HeroSection() {
+  const whatsappLink = `https://wa.me/7667238292`;
   return (
-    <section className="flex justify-around items-center pb-12 pt-28 bg-gradient-to-b from-[#ff7e54] to-[#ff2e63]">
-      <div className="flex flex-col gap-6 text-white">
-        <h1 className="text-6xl font-bold">Dr. Priyanka Maurya</h1>
-        <p className="text-lg">A dedicated politician working for the community.</p>
-        <div className="mt-4 space-x-4">
-          <Link
-            to="/donate"
-            className="inline-block px-8 py-4 bg-white text-[#e3562f] font-bold rounded-lg border-2 border-[#ff7e54] hover:bg-[#ff7e54] hover:text-white"
-          >
-            Donate
-          </Link>
-          <Link
-            to="/community"
-            className="inline-block px-8 py-4 text-white font-bold rounded-lg border-2 border-white hover:bg-white hover:text-[#e3562f]"
-          >
-            Join our community
-          </Link>
+    <section className="flex items-center h-screen bg-white">
+      <div className="container mx-auto flex flex-col md:flex-row items-center">
+        <div className="md:w-1/2 flex flex-col gap-6 p-4">
+          <h1 className="text-8xl font-bold text-gray-800">Dr. Priyanka <br/>Maurya</h1>
+          <p className="text-lg text-gray-600">A dedicated politician working for the community.</p>
+          <div className="mt-4 space-x-4">
+            <a
+              href={whatsappLink}
+              target='_blank'
+              className="inline-block px-8 py-4 bg-[#e3562f] text-white font-bold rounded-lg hover:bg-[#ff7e54] transition-colors duration-300"
+            >
+              Contact Now
+            </a>
+            <a
+              href='https://www.instagram.com/drpriyankamaurya27/'
+              target='_blank'
+              className="inline-block px-8 py-4 bg-white text-[#e3562f] font-bold rounded-lg border-2 border-[#e3562f] hover:bg-[#e3562f] hover:text-white transition-colors duration-300"
+            >
+              Join our community
+            </a>
+          </div>
         </div>
-      </div>
-      <div>
-        <img
-          src={heroImg}
-          alt="Dr. Priyanka Maurya"
-          className="h-96 w-96 object-cover border-8 border-white rounded-full"
-        />
+        <div className="md:w-1/2 p-4">
+          <img
+            src={phero}
+            alt="Dr. Priyanka Maurya"
+            className="w-[90%] object-cover rounded-lg "
+          />
+        </div>
       </div>
     </section>
   );

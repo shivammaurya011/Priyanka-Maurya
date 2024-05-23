@@ -27,7 +27,7 @@ const ContactSection = () => {
       <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center">
         <div className="absolute bg-white p-8 rounded shadow-lg">
           {children}
-          <button className="mt-4 bg-blue-800 text-white px-4 py-2 rounded" onClick={onClose}>
+          <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded" onClick={onClose}>
             Close
           </button>
         </div>
@@ -38,19 +38,19 @@ const ContactSection = () => {
   const ContactInfo = ({ icon, title, address1, address2 }) => {
     return (
       <li className="flex">
-        <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
+        <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-500 text-blue-700">
           {icon}
         </div>
         <div className="ml-4 mb-4">
-          <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">{title}</h3>
-          <p className="text-gray-600 dark:text-slate-400">{address1}</p>
-          <p className="text-gray-600 dark:text-slate-400">{address2}</p>
+          <h3 className="mb-2 text-lg font-medium leading-6 dark:text-blue-700 text-blue-700">{title}</h3>
+          <p className="text-gray-100 dark:text-slate-100">{address1}</p>
+          <p className="text-gray-100 dark:text-slate-100">{address2}</p>
         </div>
       </li>
     );
   };
   return (
-    <section className="bg-blue-900" id="contact">
+    <section className="bg-blue-500" id="contact">
       <div className="mx-auto max-w-7xl px-4 py-4 sm:px-4 lg:px-4 lg:py-4">
         <div className="mb-2">
           <div className=" max-w-3xl text-center sm:text-center md:mx-auto">
@@ -69,7 +69,7 @@ const ContactSection = () => {
           <div className="grid md:grid-cols-2">
             {/* Address and Contact Info */}
             <div className="h-full pr-6">
-              <p className="mt-3 mb-12 text-lg text-blue-900">
+              <p className="mt-3 mb-12 text-lg text-blue-500">
                 Class aptent taciti sociosqu ad litora torquent per hg jjjjj
               </p>
               <ul className="mb-6 md:mb-0">
@@ -118,23 +118,23 @@ const ContactSection = () => {
                     <div className="mx-0 mb-1 sm:mb-4">
                       <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider"></label>
                       <input type="text" id="name" autoComplete="given-name" placeholder="Your name"
-                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="name" />
+                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-600 text-gray-600 sm:mb-0" name="name" />
                     </div>
                     <div className="mx-0 mb-1 sm:mb-4">
                       <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider"></label>
                       <input type="email" id="email" autoComplete="email" placeholder="Your email address"
-                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" name="email" />
+                        className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-600 text-gray-600 sm:mb-0" name="email" />
                     </div>
                   </div>
                   <div className="mx-0 mb-1 sm:mb-4">
                     <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider"></label>
                     <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..."
-                      className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"></textarea>
+                      className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-600 text-gray-600 sm:mb-0"></textarea>
                   </div>
                 </div>
                 <div className="text-center">
                   <button type="submit"
-                    className="w-full bg-blue-800 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
                 </div>
               </form>
             </div>

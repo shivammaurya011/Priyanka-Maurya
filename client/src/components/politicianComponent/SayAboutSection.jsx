@@ -8,7 +8,7 @@ import ap5 from '../../assets/ap5.jpg';
 const sayAbout = [
   {
     image: ap1,
-    name: 'Keshav Prashad Maurya',
+    name: 'K. P. Maurya',
     position: 'Deputy CM',
     title: 'The senator we are looking for',
     description:

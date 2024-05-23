@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import indImg from "../../assets/indImg.png";
 
 function IndiaSection() {
+  const whatsappLink = `https://wa.me/7667238292`;
+
   return (
     <section className="py-12 px-20 bg-gray-100 flex justify-around">
       <div className="max-w-4xl mx-auto relative w-1/2">
@@ -45,18 +47,21 @@ function IndiaSection() {
         </p>
 
         <div className="flex justify-start space-x-4 mt-12">
-          <Link
-            to="/donate"
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-4 bg-[#e3562f] text-white font-bold rounded-lg border-2 border-[#e3562f] hover:bg-white hover:text-[#e3562f]"
           >
-            Donate
-          </Link>
-          <Link
-            to="/community"
+            Contact Now
+          </a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/drpriyankamaurya27"
             className="inline-block px-8 py-4 text-gray-900 font-bold rounded-lg border-2 border-gray-500 hover:bg-[#e3562f] hover:border-[#e3562f] hover:text-white"
           >
             Join our community
-          </Link>
+          </a>
         </div>
       </div>
     </section>

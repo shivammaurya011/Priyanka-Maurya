@@ -15,12 +15,13 @@ function RegisterSection() {
             placeholder="Enter your email"
             className="w-3/4 px-4 py-3 rounded-md focus:outline-none focus:ring focus:border-[#ff2e63]"
           />
-          <Link
-            to="/community"
+          <a
+            target="_blank"
+            href="https://www.facebook.com/drpriyankamaurya27"
             className="w-1/4 px-4 py-3 text-white text-center border-2 border-white hover:text-[#ff2e63] hover:bg-white  rounded-md"
           >
             Join us
-          </Link>
+          </a>
         </div>
         <div className="flex items-center space-x-4 mt-8">
           <FiCheckCircle className="text-[#fcbbbb] w-8 h-8" />

@@ -31,7 +31,7 @@ const VideoSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <span className="block text-lg font-semibold text-primary">Our Videos</span>
-          <h2 className="text-3xl font-bold leading-[1.2] text-blue-800 sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold leading-[1.2] text-blue-500 sm:text-4xl md:text-5xl">
             Health Insights
           </h2>
         </div>

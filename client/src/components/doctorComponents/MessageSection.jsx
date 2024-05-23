@@ -61,7 +61,7 @@ const MessageSection = () => {
                 <p className="mb-6 font-light text-blue-500">
                   {testimonial.text}
                 </p>
-                <p className="mb-2 text-xl font-semibold text-blue-800">
+                <p className="mb-2 text-xl font-semibold text-blue-500">
                   {testimonial.name}
                 </p>
                 <p className="mb-0 text-gray-500">{testimonial.role}</p>

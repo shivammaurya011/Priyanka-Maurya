@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import event from '../../assets/event.jpg'
 const events = [
   {
     image: 'https://via.placeholder.com/150',
@@ -52,22 +52,24 @@ function EventSection() {
             <p className="text-gray-700">{data.description}</p>
           </div>
           <div className="flex justify-start space-x-4">
-            <Link
-              to="/donate"
+            <a
+              target='_blank'
+              href="https://www.facebook.com/drpriyankamaurya27/events"
               className="inline-block px-8 py-4 bg-[#e3562f] text-white font-bold rounded-lg border-2 border-[#e3562f] hover:bg-white hover:text-[#e3562f]"
             >
               Register now
-            </Link>
-            <Link
-              to="/community"
+            </a>
+            <a
+              target='_blank'
+              href='https://www.facebook.com/drpriyankamaurya27/events'
               className="inline-block px-8 py-4 text-gray-900 font-bold rounded-lg border-2 border-gray-500 hover:bg-[#e3562f] hover:border-[#e3562f] hover:text-white"
             >
               More Information
-            </Link>
+            </a>
           </div>
         </div>
         <div className="w-1/2">
-          <img src={'https://scontent.flko7-2.fna.fbcdn.net/v/t39.30808-6/420174323_1046434980174693_2710799358498820713_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Jvq12ub5Cc4Ab7Wm0i_&_nc_ht=scontent.flko7-2.fna&oh=00_AfBCMT3F_5kkiq9bwHiVdIuejyvZBWwcSk4rgDwKVoekug&oe=6621A8EA'} alt="Event" className="rounded-lg" />
+          <img src={event} alt="Event" className="rounded-lg h-60 w-[80%]" />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 px-12 gap-8 max-w-7xl mx-auto">
@@ -79,12 +81,13 @@ function EventSection() {
             </div>
             <h2 className="text-xl font-semibold">{event.title}</h2>
             <p className="text-gray-700 mb-4">{event.description}</p>
-            <Link
-              to={`/register/${index}`} // You can use a dynamic route parameter for registration
+            <a
+              target='_blank'
+              href='https://www.facebook.com/drpriyankamaurya27/events'
               className="text-[#e3562f] font-bold  hover:text-[#eb9d88]"
             >
               Register Now
-            </Link>
+            </a>
           </div>
         ))}
       </div>

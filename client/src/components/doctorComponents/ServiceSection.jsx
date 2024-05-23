@@ -7,10 +7,10 @@ const ServiceSection = () => {
     return (
       <div className="w-full px-4 md:w-1/2 lg:w-1/3">
         <div className="mb-9 rounded-[20px] bg-white p-10 shadow-2 hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
-          <div className="mb-8 flex items-center justify-center h-[70px] w-[70px] rounded-full bg-blue-800 text-white">
+          <div className="mb-8 flex items-center justify-center h-[70px] w-[70px] rounded-full bg-blue-500 text-white">
             {React.cloneElement(icon, { size: 40 })} {/* Increase icon size */}
           </div>
-          <h4 className="mb-[14px] text-xl font-semibold text-blue-800">
+          <h4 className="mb-[14px] text-xl font-semibold text-blue-500">
             {title}
           </h4>
           <p className="text-body-color dark:text-dark-6 ">{details}</p>
@@ -28,7 +28,7 @@ const ServiceSection = () => {
               <span className="mb-2 block text-lg font-semibold text-primary">
                 Our Services
               </span>
-              <h2 className=" text-3xl font-bold leading-[1.2] text-blue-800 sm:text-4xl md:text-[40px]">
+              <h2 className=" text-3xl font-bold leading-[1.2] text-blue-500 sm:text-4xl md:text-[40px]">
                 What We Offer
               </h2>
             </div>
