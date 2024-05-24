@@ -40,9 +40,9 @@ function Footers() {
             <div>
               <Footer.Title title="Follow Us" />
               <Footer.LinkGroup col>
-                <Footer.Link href="https://www.linkedin.com/in/drpriyankamaurya27/">Linkedin</Footer.Link>
-                <Footer.Link href="https://www.facebook.com/drpriyankamaurya27">Facebook</Footer.Link>
-                <Footer.Link href="https://www.instagram.com/drpriyankamaurya27/">Instagram</Footer.Link>
+                <Footer.Link target='_blank' href="https://www.linkedin.com/in/drpriyankamaurya27/">Linkedin</Footer.Link>
+                <Footer.Link target='_blank' href="https://www.facebook.com/drpriyankamaurya27">Facebook</Footer.Link>
+                <Footer.Link target='_blank' href="https://www.instagram.com/drpriyankamaurya27/">Instagram</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -57,13 +57,13 @@ function Footers() {
         </div>
         <Footer.Divider />
         <div className="w-full text-gray-200 items-center sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="https://vibhamaurya011.github.io/" by="Shivam Maurya™" year={new Date().getFullYear()} />
+          <Footer.Copyright target='_blank' href="#" by="Shivam Maurya™" year={new Date().getFullYear()} className='dark:text-gray-100 text-gray-100 hover:text-gray-300'/>
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon href="https://www.facebook.com/drpriyankamaurya27" icon={BsFacebook} />
-            <Footer.Icon href="https://www.instagram.com/drpriyankamaurya27/" icon={BsInstagram} />
-            <Footer.Icon href="https://twitter.com/dpriyankamaurya" icon={BsTwitter} />
-            <Footer.Icon href="https://youtube.com/@DrPriyankaMauryaHomeopathy" icon={BsYoutube} />
-            <Footer.Icon href="https://www.linkedin.com/in/drpriyankamaurya27/" icon={BsLinkedin} />
+            <Footer.Icon target='_blank' href="https://www.facebook.com/drpriyankamaurya27" icon={BsFacebook} className='dark:text-gray-100 text-gray-100 hover:text-gray-300'/>
+            <Footer.Icon target='_blank' href="https://www.instagram.com/drpriyankamaurya27/" icon={BsInstagram} className='dark:text-gray-100 text-gray-100 hover:text-gray-300'/>
+            <Footer.Icon target='_blank' href="https://twitter.com/dpriyankamaurya" icon={BsTwitter} className='dark:text-gray-100 text-gray-100 hover:text-gray-300'/>
+            <Footer.Icon target='_blank' href="https://youtube.com/@DrPriyankaMauryaHomeopathy" icon={BsYoutube} className='dark:text-gray-100 text-gray-100 hover:text-gray-300'/>
+            <Footer.Icon target='_blank' href="https://www.linkedin.com/in/drpriyankamaurya27/" icon={BsLinkedin} className='dark:text-gray-100 text-gray-100 hover:text-gray-300'/>
           </div>
         </div>
       </div>

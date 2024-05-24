@@ -5,7 +5,6 @@ import profile from '../../assets/profile.jpeg'
 function Header() {
     const [activeLink, setActiveLink] = useState('');
     const location = useLocation();
-    const whatsappLink = `https://wa.me/7667238292`;
 
     useEffect(() => {
         setActiveLink(location.pathname);
@@ -13,13 +12,13 @@ function Header() {
 
     return (
         <Navbar fluid className={`dark:bg-pink-500 bg-pink-500 dark:${activeLink === "/politician" && 'bg-red-500'} ${activeLink === "/politician" && 'bg-red-500'} dark:${activeLink === "/doctor" && 'bg-blue-500'} ${activeLink === "/doctor" && 'bg-blue-500'} dark:${activeLink === "/social-work" && 'bg-yellow-500'} ${activeLink === "/social-work" && 'bg-yellow-500'} fixed top-0 right-0 left-0 z-auto`}>
-            <Navbar.Brand as={Link} to="/doctor">
+            <Navbar.Brand as={Link} to="/">
                 <Avatar img={profile} rounded className="border-2 rounded-full"/>
                 <span className="self-center whitespace-nowrap ml-2 text-2xl text-white font-semibold">
                     Dr. Priyanka Maurya
                 </span>
             </Navbar.Brand>
-            <a href={whatsappLink} className="order-1 border-2 text-white font-medium hover:text-black hover:bg-white py-2 px-4 rounded-full">Contact Now</a>
+            <a href={'https://wa.me/7667238292'} className="order-1 border-2 text-white font-medium hover:text-black hover:bg-white py-2 px-4 rounded-full">Contact Now</a>
             <Navbar.Toggle />
             <Navbar.Collapse>
                 <Navbar.Link as={Link} to="/" active={activeLink === "/"} className="text-base">Home</Navbar.Link>

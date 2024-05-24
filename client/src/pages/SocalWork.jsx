@@ -99,8 +99,8 @@ const SocialWork = () => {
     <Layout>
       <section className="bg-cover h-screen bg-center py-16" style={{ backgroundImage: `url(${heroBackground})` }}>
         <div className="container mx-auto text-center">
-          <h1 className="text-5xl font-bold text-white mb-4 md:mb-28">Empowering Communities, One Step at a Time</h1>
-          <p className="text-2xl text-gray-900 opacity-75 bg-slate-300 border-2 mb-8 md:mb-20 max-w-2xl mx-auto">Join us in our mission to create a positive impact and bring lasting change to those in need. Together, we can make a difference.</p>
+          <h1 className="text-5xl font-bold text-yellow-500 mb-4 md:mb-28">Empowering Communities, One Step at a Time</h1>
+          <p className="text-2xl text-gray-900 opacity-75 bg-yellow-100 border-2 mb-8 md:mb-20 max-w-2xl mx-auto">Join us in our mission to create a positive impact and bring lasting change to those in need. Together, we can make a difference.</p>
           <a href="#contact" className="bg-yellow-500 text-white py-3 px-6 rounded-full font-semibold hover:bg-yellow-600 transition duration-300 inline-block">
             Get in Touch
           </a>
@@ -109,11 +109,11 @@ const SocialWork = () => {
 
       <section id="experience" className="bg-yellow-100 py-12 px-20">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">Experience</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center text-yellow-500">Experience</h2>
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
-                <h3 className="text-2xl font-bold mb-2 text-yellow-600">{exp.role}</h3>
+                <h3 className="text-2xl font-bold mb-2 text-yellow-500">{exp.role}</h3>
                 <p className="text-gray-600 mb-1">{exp.company} - {exp.duration}</p>
                 <p className="text-gray-700 mb-4">{exp.description}</p>
                 <p className="text-gray-500 italic">{exp.location}</p>
@@ -126,7 +126,7 @@ const SocialWork = () => {
 
       <section id="services" className="bg-white py-12 px-20">
         <div className="container mx-auto">
-          <h2 className="text-3xl font-bold mb-8 text-center">Our Services</h2>
+          <h2 className="text-3xl font-bold mb-8 text-yellow-500 text-center">Our Services</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-gray-100 p-8 rounded-lg shadow-lg transform hover:scale-105 transition duration-300">
@@ -140,13 +140,13 @@ const SocialWork = () => {
 
       <section id="testimonials" className="bg-yellow-100 py-12 px-20">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">Testimonials</h2>
+          <h2 className="text-4xl font-bold mb-8 text-center text-yellow-500">Testimonials</h2>
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
               <div key={index} className="p-8">
                 <div className="bg-white p-8 rounded-lg shadow-lg">
                   <p className="text-gray-700 text-justify leading-relaxed mb-6 whitespace-pre-line">{testimonial.feedback}</p>
-                  <h4 className="text-2xl font-semibold text-right text-gray-900">{testimonial.name}</h4>
+                  <h4 className="text-2xl font-semibold text-right text-yellow-300">{testimonial.name}</h4>
                   <p className="text-right text-gray-600 italic">{testimonial.occupation}</p>
                 </div>
               </div>
@@ -156,39 +156,44 @@ const SocialWork = () => {
       </section>
 
       <section id="contact" className="bg-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/path-to-your-image.jpg")', opacity: 0.1 }}></div>
-        <div className="container mx-auto text-center relative z-10">
-          <h2 className="text-5xl font-bold mb-8 text-gray-800 animate-fade-in">Get in Touch</h2>
-          <p className="text-xl mb-8 text-gray-600 animate-fade-in">We would love to hear from you. Reach out to us through any of the following methods.</p>
-          <div className="flex flex-col items-center space-y-6">
-            <a
-              href={whatsappLink}
-              className="bg-yellow-500 text-white py-3 px-6 rounded-full inline-flex items-center hover:bg-yellow-600 transition transform hover:-translate-y-1 duration-300 shadow-lg animate-bounce"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp className="mr-2" /> Connect via WhatsApp
+      <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url("/path-to-your-image.jpg")', opacity: 0.1 }}></div>
+      <div className="container mx-auto text-center relative z-10">
+        <h2 className="text-5xl font-bold mb-8 text-yellow-500 animate-fade-in">Get in Touch</h2>
+        <p className="text-xl mb-8 px-16 text-gray-600 animate-fade-in">
+          We would love to hear from you. Reach out to us through any of the following methods. 
+          Whether you have questions, feedback, or simply want to connect, we're here for you. 
+          Our team is dedicated to providing the best support possible and ensuring all your inquiries 
+          are addressed promptly. Don't hesitate to drop us a message!
+        </p>
+        <div className="flex flex-col items-center space-y-6">
+          <a
+            href={whatsappLink}
+            className="bg-yellow-500 text-white py-3 px-6 rounded-full inline-flex items-center hover:bg-yellow-600 transition transform hover:-translate-y-1 duration-300 shadow-lg animate-bounce"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp className="mr-2" /> Connect via WhatsApp
+          </a>
+          <div className="flex space-x-4 text-3xl">
+            <a target='_blank' href="mailto:priyankamaurya27@gmail.com" className="text-yellow-300 hover:text-yellow-500 transition duration-300">
+              <FaEnvelope />
             </a>
-            <div className="flex space-x-4 text-3xl">
-              <a target='_blank' href="mailto:priyankamaurya27@gmail.com" className="text-gray-500 hover:text-gray-700 transition duration-300">
-                <FaEnvelope />
-              </a>
-              <a target='_blank' href="tel:+917667238292" className="text-gray-500 hover:text-gray-700 transition duration-300">
-                <FaPhoneAlt />
-              </a>
-              <a target='_blank' href="https://www.facebook.com/drpriyankamaurya27" className="text-gray-500 hover:text-gray-700 transition duration-300">
-                <FaFacebook />
-              </a>
-              <a target='_blank' href="https://www.instagram.com/drpriyankamaurya27/" className="text-gray-500 hover:text-gray-700 transition duration-300">
-                <FaInstagram />
-              </a>
-              <a target='_blank' href="https://www.linkedin.com/in/drpriyankamaurya27/" className="text-gray-500 hover:text-gray-700 transition duration-300">
-                <FaLinkedin />
-              </a>
-            </div>
+            <a target='_blank' href="tel:+917667238292" className="text-yellow-300 hover:text-yellow-500 transition duration-300">
+              <FaPhoneAlt />
+            </a>
+            <a target='_blank' href="https://www.facebook.com/drpriyankamaurya27" className="text-yellow-300 hover:text-yellow-500 transition duration-300">
+              <FaFacebook />
+            </a>
+            <a target='_blank' href="https://www.instagram.com/drpriyankamaurya27/" className="text-yellow-300 hover:text-yellow-500 transition duration-300">
+              <FaInstagram />
+            </a>
+            <a target='_blank' href="https://www.linkedin.com/in/drpriyankamaurya27/" className="text-yellow-300 hover:text-yellow-500 transition duration-300">
+              <FaLinkedin />
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <style jsx>{`
         @keyframes fade-in {
