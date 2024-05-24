@@ -155,42 +155,42 @@ function Home() {
 
   return (
     <Layout>
-      <section className="h-screen overflow-hidden">
+      <section className="overflow-hidden pb-8">
         <Slider {...settings}>
           {slides.map((slide, index) => (
             <div key={index} className="flex items-center justify-center px-4">
               {index % 2 === 0 ? (
-                <div className="flex w-full items-center justify-center">
-                  <div className="w-1/2 p-8">
-                    <img src={slide.image} alt={slide.title} className="w-full h-96 rounded-lg shadow-lg" />
+                <div className="flex w-full flex-wrap items-center justify-center">
+                  <div className="w-full md:w-1/2 p-4 md:p-8">
+                    <img src={slide.image} alt={slide.title} className="w-full h-96 rounded-lg shadow-lg object-cover" />
                   </div>
-                  <div className="w-1/2 p-8">
-                    <h2 className="text-5xl font-bold text-pink-500 mb-4">{slide.title}</h2>
+                  <div className="w-full md:w-1/2 p-4 md:p-8">
+                    <h2 className="text-3xl md:text-5xl font-bold text-pink-500 mb-4">{slide.title}</h2>
                     <p className="text-lg text-gray-600 mb-8">{slide.description}</p>
                     <a 
                       target='_blank'
                       href="https://wa.me/7667238292" 
-                      className="inline-block px-8 py-4 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-600 transition-colors duration-300"
+                      className="inline-block px-6 md:px-8 py-3 md:py-4 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-600 transition-colors duration-300"
                     >
                       Contact Now
                     </a>
                   </div>
                 </div>
               ) : (
-                <div className="flex w-full items-center justify-center">
-                  <div className="w-1/2 p-8">
-                    <h2 className="text-5xl font-bold text-pink-500 mb-4">{slide.title}</h2>
+                <div className="flex w-full flex-wrap items-center justify-center">
+                  <div className="w-full md:w-1/2 p-4 md:p-8">
+                    <h2 className="text-3xl md:text-5xl font-bold text-pink-500 mb-4">{slide.title}</h2>
                     <p className="text-lg text-gray-600 mb-8">{slide.description}</p>
                     <a 
                       target='_blank'
                       href="https://wa.me/7667238292"
-                      className="inline-block px-8 py-4 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-600 transition-colors duration-300"
+                      className="inline-block px-6 md:px-8 py-3 md:py-4 bg-pink-500 text-white font-bold rounded-lg hover:bg-pink-600 transition-colors duration-300"
                     >
                       Contact Now
                     </a>
                   </div>
-                  <div className="w-1/2 p-8">
-                    <img src={slide.image} alt={slide.title} className="w-full h-96 rounded-lg shadow-lg" />
+                  <div className="w-full md:w-1/2 p-4 md:p-8">
+                    <img src={slide.image} alt={slide.title} className="w-full h-96 rounded-lg shadow-lg object-cover" />
                   </div>
                 </div>
               )}
@@ -198,7 +198,7 @@ function Home() {
           ))}
         </Slider>
       </section>
-      <section className="py-12 mt-[-50px] bg-pink-100">
+      <section className="py-12 bg-pink-100">
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-sm text-[#e3562f] uppercase font-medium">JOIN OUR MOVEMENT</p>
         <h1 className="text-4xl font-bold text-pink-500 mt-4 mb-8">We have a big, committed community</h1>
